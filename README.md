@@ -13,9 +13,9 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
 ![Google Maps](https://img.shields.io/badge/Google%20Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
 [![FastAPI](<https://img.shields.io/badge/Backend-FastAPI%20(planned)-009688?style=for-the-badge&logo=fastapi&logoColor=white>)](#-tech-stack)
-[![License: MIT](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)](./LICENSE)
+[![Hackathon](https://img.shields.io/badge/Built%20For-Hackathon-FF6F61?style=for-the-badge&logo=devpost&logoColor=white)](#-hackathon)
+[![Team](https://img.shields.io/badge/Team-Campus%20Coders-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](#-team)
 [![Status](https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge)](#-development-status)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](#-contributing)
 
 </div>
 
@@ -24,11 +24,11 @@
 ## 📋 Table of Contents
 
 - [About the Project](#-about-the-project)
+- [Hackathon](#-hackathon)
 - [The Problem](#-the-problem)
 - [Our Solution](#-our-solution)
 - [Key Features](#-key-features)
 - [How It Works](#-how-it-works)
-- [Project Preview](#-project-preview)
 - [System Architecture](#-system-architecture)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
@@ -37,10 +37,7 @@
 - [Roadmap](#-roadmap)
 - [Target Users](#-target-users)
 - [Development Status](#-development-status)
-- [Contributing](#-contributing)
-- [License](#-license)
 - [Team](#-team)
-- [Support](#-support)
 
 ---
 
@@ -51,6 +48,21 @@
 Instead of wandering around asking for directions or digging through a static college website, users can instantly **search, locate, and navigate** to classrooms, faculty cabins, laboratories, departments, libraries, and other campus facilities — all from one responsive web app.
 
 > 🎯 The goal: make campus navigation **smarter, faster, and more accessible**, while removing the confusion that new students and visitors face on day one.
+
+---
+
+## 🏆 Hackathon
+
+This project is being built and showcased as our **hackathon submission** — a real, working solution to a problem every large campus faces.
+
+**Why Campus Connect stands out:**
+
+- 🚀 **Working prototype** — a live, functional React + TypeScript frontend, not just slides
+- 🌍 **Real-world impact** — solves a daily pain point for thousands of students, faculty, and visitors
+- 📈 **Scalable vision** — designed to plug into any campus with a clear backend & AI roadmap
+- 🤖 **AI-first roadmap** — chatbot assistant, voice search, and AR navigation planned next
+
+> 🔗 Check out the [Roadmap](#-roadmap) to see where we're taking this beyond the hackathon.
 
 ---
 
@@ -105,28 +117,6 @@ Campus Connect brings everything together in a **single, centralized smart-navig
 3. **🗺 View on Map** — See the destination pinned on the interactive campus map.
 4. **🧭 Navigate** — Follow the suggested route to reach your destination.
 5. **🔔 Stay Informed** — Receive notifications and emergency alerts along the way.
-
----
-
-## 🖼 Project Preview
-
-> 📸 _Screenshots of the live application coming soon._
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/YRMESHRAM/Campus_Connect/main/public/images/logo.png" alt="Campus Connect Logo" width="180">
-
-**Campus Connect — Making Campus Navigation Smarter, Faster & Simpler**
-
-</div>
-
-<!--
-Replace the block above with actual UI screenshots once available, e.g.:
-<p align="center">
-  <img src="public/images/home.png" alt="Home Page" width="45%"/>
-  <img src="public/images/map.png" alt="Campus Map" width="45%"/>
-</p>
--->
 
 ---
 
@@ -207,7 +197,7 @@ flowchart TD
 ## 📂 Project Structure
 
 ```text
-Campus_Connect/
+Campus_Coder/
 │
 ├── public/                  # Static assets (images, favicon, etc.)
 │   └── images/
@@ -246,13 +236,13 @@ Make sure you have the following installed:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/YRMESHRAM/Campus_Connect.git
+   git clone https://github.com/Prathampimpalikar/Campus_Coder.git
    ```
 
 2. **Navigate into the project directory**
 
    ```bash
-   cd Campus_Connect
+   cd Campus_Coder
    ```
 
 3. **Install dependencies**
@@ -306,7 +296,7 @@ The project is under active development. Upcoming enhancements include:
 - 📍 **Real-time Location Tracking** — Live position on the map
 - 🥽 **AR Campus Navigation** — Augmented-reality wayfinding
 
-> Have a feature idea? Feel free to [open an issue](https://github.com/YRMESHRAM/Campus_Connect/issues) or submit a pull request!
+> Have a feature idea? Feel free to [open an issue](https://github.com/Prathampimpalikar/Campus_Coder/issues) or submit a pull request!
 
 ---
 
@@ -333,48 +323,9 @@ See the [Roadmap](#-roadmap) for details.
 
 ---
 
-## 🤝 Contributing
-
-Contributions are what make the open-source community amazing! Any contributions you make are **greatly appreciated**.
-
-1. **Fork** the repository
-2. Create your **feature branch**
-   ```bash
-   git checkout -b feature/YourAmazingFeature
-   ```
-3. **Commit** your changes
-   ```bash
-   git commit -m "Add some amazing feature"
-   ```
-4. **Push** to the branch
-   ```bash
-   git push origin feature/YourAmazingFeature
-   ```
-5. Open a **Pull Request**
-
-For major changes, please open an issue first to discuss what you'd like to change. Don't forget to update tests and documentation as appropriate.
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See the [`LICENSE`](./LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2026 Campus Connect Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
 ## 👥 Team
 
-This project is a **Group Major Project** developed by B.Tech students of **Artificial Intelligence & Machine Learning** at **S.B. Jain Institute of Technology, Management & Research**.
+Meet **Team Campus Coders** — the crew behind Campus Connect:
 
 <div align="center">
 
@@ -383,22 +334,16 @@ This project is a **Group Major Project** developed by B.Tech students of **Arti
 
 <br/>
 
-[![GitHub Repository](https://img.shields.io/badge/Repository-Campus__Connect-181717?style=for-the-badge&logo=github)](https://github.com/YRMESHRAM/Campus_Connect)
+[![GitHub Repository](https://img.shields.io/badge/Repository-Campus__Coder-181717?style=for-the-badge&logo=github)](https://github.com/Prathampimpalikar/Campus_Coder)
 
 </div>
 
 ---
-
-## ⭐ Support
-
-If you found this project useful, please consider giving it a **⭐ Star on GitHub** — it motivates further development and improvement!
 
 <div align="center">
 
 ### 🚀 Campus Connect
 
 ### _Making Campus Navigation Smarter, Faster & Simpler_
-
-⭐ Star this repository if you like the project ⭐
 
 </div>
