@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "title": "Welcome to Campus Connect",
+    "message": "Explore live classroom availability, faculty directory, emergency contacts, and campus navigation.",
+    "time": "Just now",
+    "timestamp": "Just now",
+    "isRead": false,
+    "unread": true,
+    "type": "info"
+  }
+]
