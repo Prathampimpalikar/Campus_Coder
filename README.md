@@ -11,7 +11,7 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD62E)
-![Google Maps](https://img.shields.io/badge/Google%20Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
+![Custom 3D Map](https://img.shields.io/badge/Custom%203D%20Campus%20Map-FF7043?style=for-the-badge)
 [![FastAPI](<https://img.shields.io/badge/Backend-FastAPI%20(planned)-009688?style=for-the-badge&logo=fastapi&logoColor=white>)](#-tech-stack)
 [![Hackathon](https://img.shields.io/badge/Built%20For-Hackathon-FF6F61?style=for-the-badge&logo=devpost&logoColor=white)](#-hackathon)
 [![Team](https://img.shields.io/badge/Team-Campus%20Coders-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](#-team)
@@ -34,7 +34,6 @@
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
 - [Usage](#-usage)
-- [Roadmap](#-roadmap)
 - [Target Users](#-target-users)
 - [Development Status](#-development-status)
 - [Team](#-team)
@@ -59,10 +58,8 @@ This project is being built and showcased as our **hackathon submission** — a 
 
 - 🚀 **Working prototype** — a live, functional React + TypeScript frontend, not just slides
 - 🌍 **Real-world impact** — solves a daily pain point for thousands of students, faculty, and visitors
+- 🗺 **Custom-built 3D campus map** — our own interactive 3D model of the college, no third-party map APIs
 - 📈 **Scalable vision** — designed to plug into any campus with a clear backend & AI roadmap
-- 🤖 **AI-first roadmap** — chatbot assistant, voice search, and AR navigation planned next
-
-> 🔗 Check out the [Roadmap](#-roadmap) to see where we're taking this beyond the hackathon.
 
 ---
 
@@ -84,7 +81,7 @@ Large educational campuses come with a familiar set of navigation headaches:
 Campus Connect brings everything together in a **single, centralized smart-navigation platform**:
 
 🔎 Instantly **search** for faculty, classrooms, labs, and facilities
-📍 **Navigate** to any destination with an interactive campus map
+📍 **Navigate** to any destination with an interactive **custom 3D campus map**
 🗂 Browse a **faculty directory** with cabin numbers and departments
 🚑 Access **emergency contacts** in one tap
 🔔 Stay updated with campus **notifications & announcements**
@@ -101,7 +98,7 @@ Campus Connect brings everything together in a **single, centralized smart-navig
 | 👤  | **Faculty Profiles**       | View cabin number, department, and contact info |
 | 📍  | **Classroom Finder**       | Locate any classroom instantly                  |
 | 🔬  | **Lab & Facility Finder**  | Find laboratories, libraries, and amenities     |
-| 🗺  | **Interactive Campus Map** | Digital map with indoor/outdoor support         |
+| 🗺  | **Interactive 3D Campus Map** | Custom-built 3D map of the college with indoor/outdoor support |
 | 🚨  | **Emergency Information**  | Quick access to emergency contacts and services |
 | 🔔  | **Notifications**          | Real-time campus announcements                  |
 | ⚙️  | **Settings**               | Personalize the experience to your role         |
@@ -114,7 +111,7 @@ Campus Connect brings everything together in a **single, centralized smart-navig
 
 1. **🔍 Search** — Type a faculty name, classroom code, department, or facility.
 2. **📋 Select** — Pick the matching result from the smart, filtered list.
-3. **🗺 View on Map** — See the destination pinned on the interactive campus map.
+3. **🗺 View on Map** — See the destination pinned on the interactive 3D campus map.
 4. **🧭 Navigate** — Follow the suggested route to reach your destination.
 5. **🔔 Stay Informed** — Receive notifications and emergency alerts along the way.
 
@@ -131,6 +128,7 @@ flowchart TD
     subgraph Client["🖥️ Frontend (Live)"]
         UI["React + TypeScript UI<br/>(Vite)"]
         NAV["Campus Navigation Engine<br/>(Search · Routing · State)"]
+        M3D["Custom 3D Campus Map<br/>(Interactive College Model)"]
     end
 
     subgraph Services["⚙️ Application Services"]
@@ -141,8 +139,7 @@ flowchart TD
         EM["Emergency Info"]
     end
 
-    subgraph External["🌍 External & Future Layers"]
-        GM["Google Maps API"]
+    subgraph External["🌍 Future Layers"]
         BE["FastAPI Backend"]:::future
         DB[("PostgreSQL")]:::future
         AU["Firebase Auth"]:::future
@@ -151,7 +148,7 @@ flowchart TD
     U --> UI
     UI --> NAV
     NAV --> FD & CF & MP & NT & EM
-    MP --> GM
+    MP --> M3D
     NAV -.-> BE
     BE -.-> DB
     BE -.-> AU
@@ -182,10 +179,10 @@ flowchart TD
 
 - **[Firebase Authentication](https://firebase.google.com/products/auth)** — Secure sign-in and role-based access
 
-### 🗺 Maps
+### 🗺 Maps & 3D
 
-- **[Google Maps API](https://developers.google.com/maps)** — Outdoor mapping
-- **Custom Indoor Campus Map** — Building- and floor-level navigation
+- **Custom 3D Campus Map** — Interactive 3D model of the entire college, built in-house
+- **Indoor & Outdoor Navigation** — Building- and floor-level wayfinding, no third-party map APIs needed
 
 ### 🔧 Tools & Version Control
 
@@ -229,7 +226,6 @@ Make sure you have the following installed:
 
 - **[Node.js](https://nodejs.org/)** (v18 or higher recommended)
 - **[npm](https://www.npmjs.com/)** (comes with Node.js)
-- A **Google Maps API key** (for the map feature) — [get one here](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
 ### 📥 Installation
 
@@ -283,23 +279,6 @@ npm run preview    # Preview the production build locally
 
 ---
 
-## 📈 Roadmap
-
-The project is under active development. Upcoming enhancements include:
-
-- 🤖 **AI Chatbot** — Conversational campus assistant
-- 🧭 **Indoor Navigation** — Floor-level routing inside buildings
-- 📱 **Mobile Application** — Native iOS & Android apps
-- 🎤 **Voice Search** — Hands-free destination lookup
-- 📷 **QR Code Navigation** — Scan a code to get instant directions
-- 🛰 **Live Faculty Availability** — Real-time cabin/office status
-- 📍 **Real-time Location Tracking** — Live position on the map
-- 🥽 **AR Campus Navigation** — Augmented-reality wayfinding
-
-> Have a feature idea? Feel free to [open an issue](https://github.com/Prathampimpalikar/Campus_Coder/issues) or submit a pull request!
-
----
-
 ## 🎯 Target Users
 
 - 🎓 **Students** — Find classrooms, labs, and faculty
@@ -312,14 +291,12 @@ The project is under active development. Upcoming enhancements include:
 
 ## 🚧 Development Status
 
-This project is currently **frontend-only and in active development**. The React + TypeScript interface is functional, while the following components are on the roadmap:
+This project is currently **frontend-only and in active development**. The React + TypeScript interface with the custom 3D campus map is functional, while the following components are planned next:
 
 - ⚙️ FastAPI backend
 - 🗄 PostgreSQL database
 - 🔐 Firebase authentication
 - 🤖 AI-powered features (chatbot, recommendations)
-
-See the [Roadmap](#-roadmap) for details.
 
 ---
 
